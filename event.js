@@ -24,3 +24,30 @@ makeGreen.addEventListener('click',
 function greenButton(){
     document.body.style.backgroundColor= 'green';
 })
+
+document.getElementById('make-golden').addEventListener('click', function(){
+    document.body.style.backgroundColor='wheat';
+
+});
+
+
+document.getElementById('button-1').addEventListener('click',function(){
+    document.body.style.backgroundColor= 'teal'
+})
+
+
+
+
+document.getElementById('button-2').addEventListener('click', function(){
+    document.body.style.backgroundColor= 'olive'
+})
+
+document.getElementById('button-3').addEventListener('click', function(){
+    document.body.style.backgroundColor='aqua'
+})
+
+
+
+document.getElementById('button-4').addEventListener('click', function(){
+    document.body.style.backgroundColor= 'maroon'
+})
