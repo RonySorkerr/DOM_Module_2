@@ -6,6 +6,12 @@
     <title>my self</title>
 </head>
 <body>
+    <p id="input-text-display">input text</p>
+
+    <input type="text" name="" id="input-field">
+    <button id="btn-updt">Update</button>
+
+
     <h1 id="text">text is </h1>
     <button onclick="lightUp()">Button-1</button>
     <button id="change">BUTTON-2</button>
@@ -19,6 +25,15 @@
         document.getElementById('change').addEventListener('click', function(){
             const blah = document.getElementById('text');
             blah.innerText= 'fine to have you hrere';
+        })
+
+        document.getElementById('btn-updt').addEventListener('click',function(){
+            const inputField = document.getElementById('input-field');
+            const inputText = inputField.value;
+            const p = document.getElementById('input-text-display')
+            p.innerText= inputText;
+
+            inputField.value = '';
         })
     </script>
 </body>
