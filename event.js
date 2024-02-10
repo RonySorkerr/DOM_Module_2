@@ -1,0 +1,1 @@
+console.log('this is alogn with js file');
