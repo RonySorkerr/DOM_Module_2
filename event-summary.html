@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my self</title>
+</head>
+<body>
+    <h1 id="text">text is </h1>
+    <button onclick="lightUp()">Button-1</button>
+    <button id="change">BUTTON-2</button>
+
+    <script>
+        function lightUp(){
+            const changingTexts = document.getElementById('text');
+            changingTexts.innerText = 'Text is changed'
+        }
+
+        document.getElementById('change').addEventListener('click', function(){
+            const blah = document.getElementById('text');
+            blah.innerText= 'fine to have you hrere';
+        })
+    </script>
+</body>
+</html>
