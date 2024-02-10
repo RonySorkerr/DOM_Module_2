@@ -9,8 +9,38 @@
 
 <h1 onclick="console.log('I am clicked')">This is DOM event</h1>
 
+<!-- option 1 to add onclick event -->
+
 <button onclick="console.log(7)">Click Me</button>
 <button onclick="console.log(65)">Another Button</button>
+
+<br>
+
+<!-- option 2 to add onclick events -->
+
+<button onclick="document.body.style.backgroundColor='yellow'">Make Yellow</button>
+<button onclick="makeRed()">make red</button>
+
+<button id="make_blue">Make Blue</button>
+
+<button id="pink">Pink button</button>
+
+<script>
+
+    // option 3 to add onclick events
+
+    function makeRed(){
+        document.body.style.backgroundColor='red';
+    }
+
+    const blue = document.getElementById('make_blue');
+    blue.onclick = make_blue;
+
+    function make_blue(){
+        document.body.style.backgroundColor = 'blue';
+    }
+
+</script>
 
 
     <script src="event.js"></script>
