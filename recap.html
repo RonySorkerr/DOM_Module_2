@@ -12,8 +12,34 @@
     <button id="button">Nice text without background color</button>
     <button>Very nice text with background color</button>
 
+
+
+
+    <p id="input-name">Your name is : </p>
+    <input type="text" id="input">
+    <button id="update-button">Update</button>
+
     <script>
         
+        document.getElementById('update-button').addEventListener('click', function(){
+            const inputField = document.getElementById('input');
+            const inputText = inputField.value;
+            const name = document.getElementById('input-name');
+            name.innerText = inputText;
+
+        })
+
+
+
+        document.getElementById('update-button').addEventListener('click',function(){
+            document.body.style.backgroundColor= ' teal';
+        })
+
+
+
+
+
+
         document.getElementById('button').addEventListener('click', function(){
             const change = document.getElementById('texts');
             change.innerText= 'fine'
