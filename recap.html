@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="texts">Default text</h1>
+
+    <button id="button">Nice text without background color</button>
+    <button>Very nice text with background color</button>
+
+    <script>
+        
+        document.getElementById('button').addEventListener('click', function(){
+            const change = document.getElementById('texts');
+            change.innerText= 'fine'
+            
+        })
+
+        const color = document.getElementById('button').addEventListener('click', function(){
+            document.body.style.backgroundColor= 'teal'
+        })
+
+
+    </script>
+</body>
+</html>
