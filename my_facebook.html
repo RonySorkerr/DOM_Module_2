@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Facebook</title>
+    <style>
+        p{
+            background-color: wheat;
+            padding: 5px;
+            border-radius: 10px;
+            color: red;
+        }
+        p::before{
+            content: 'Name : ';
+            color: white;
+        }
+
+        p::after{
+            content: ' Time ';
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <section>
@@ -17,14 +34,25 @@
                 <p>There are so many problem in this code</p>
             </div>
             <br>
-            <textarea name="" id="comment_section" cols="30" rows="10"></textarea>
+            <textarea name="" id="comment_area" cols="30" rows="10"></textarea>
             <br>
         </div>
     </section>
 
 
     <script>
+        document.getElementById('comment_button').addEventListener('click', function(){
+            const commentBox = document.getElementById('comment_area');
+            const newComment = commentBox.value;
 
+            const commentContainer = document.getElementById('comment_container')
+            const p = document.createElement('p');
+            p.innerText = newComment;
+
+            commentContainer.appendChild(p);
+
+            commentBox.value = '';
+        })
     </script>
 </body>
 </html>
